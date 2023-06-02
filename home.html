@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="all.css">
+    <style>
+        #i{
+           margin-top: 8px;
+           margin-left: 200px;
+        }
+        h2{
+            text-align: center;
+            justify-content: center;
+            font-size: 60px;
+            background-color: rgb(189, 207, 255);
+            padding: 20px;
+            margin-top: 10px;
+            color: rgb(88, 88, 88);
+        }
+    </style>
+</head>
+    <body>
+        <div class="africa">
+        <img src="arms.jfif" id="img">
+        <div class="margin">  
+        REPUBLIC OF RWANDA<br>
+        MINISTRY OF HEALTH<br>
+        GISENYI DISTRICT HOSPITAL<br>
+        RUBAVU DISTRICT
+        </div>
+        <p>GISENYI DISTRICT HOSPITAL</p>
+        </div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="SERVICES.HTML">Services</a></li>
+            <li><a href="appointment.html">Appointments</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="about us.html">About us</a></li>
+        </ul>
+        <script>
+            var i=0;
+            var images=[];
+            var time=3000;
+
+            images[0]="gisenyi.jpg";
+            images[2]="lab.jpg";
+            images[3]="maternity.jpg";
+            images[1]="services.jpg";
+            images[4]="other.jpg";
+
+            function changeImg(){
+                document.slide.src = images[i];
+
+                if(i < images.length - 1){
+                    i++;
+                } else{
+                    i = 0;
+                }
+                setTimeout("changeImg()", time);
+            }
+            window.onload = changeImg;
+        </script>
+        <h2>WELCOME TO GISENYI DISTRICT HOSPITAL</h2>
+        <img name="slide" width="1250px" height="650px" id="i">
+    </body>
+</html>

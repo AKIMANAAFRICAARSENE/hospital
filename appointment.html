@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>appointment</title>
+  <link rel="stylesheet" href="all.css">
+  <style>
+    table,tr,td{
+      border: 3px solid;
+      border-collapse: collapse;
+      width: 1000PX;
+      font-size: 25px;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: bold;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      margin-left: 10px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    textarea {
+      width: 70%;
+      padding: 12px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: none;
+      outline: none;
+      border-bottom: 2px solid #ccc;
+      font-size: 20px;
+      background-color: transparent;
+    }
+    input[type="date"],
+    input[type="time"] {
+      width: 70%;
+      padding: 12px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: none;
+      border-bottom: 2px solid #ccc;
+      font-size: 20px;
+      background-color: transparent;
+    }
+    button[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      margin-top: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      width: 15%;
+      font-size: 20px;
+      margin-left: 400px;
+      margin-bottom: 10px;
+    }
+    button[type="submit"]:hover {
+      background-color: #4CAF50;
+    }
+    option{
+      background-color: rgb(145, 201, 195);
+    }
+    input::placeholder {
+      color: black;
+      font-size: 20px;
+    }
+    #aaa {
+      text-align: center;
+      box-sizing: content-box;
+      width: 50%;
+      border-bottom: 1px dotted;
+      margin-top: 0;
+    }
+    div{
+      margin-left: 400px;
+    }
+    h1{
+      margin-left: 10px;
+      margin-top: 10px;
+    }
+    #in{
+      margin-left: 10px;
+    }
+  </style>
+</head>
+  <body>
+  <div class="africa">
+  <img src="arms.jfif" id="img">
+  <div class="margin">  
+    REPUBLIC OF RWANDA<br>
+    MINISTRY OF HEALTH<br>
+    GISENYI DISTRICT HOSPITAL<br>
+    RUBAVU DISTRICT
+  </div>
+    <p>GISENYI DISTRICT HOSPITAL</p>
+  </div>
+  <ul>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="SERVICES.HTML">Services</a></li>
+    <li><a href="appointment.html">Appointments</a></li>
+    <li><a href="location.html">Location</a></li>
+    <li><a href="about us.html">About us</a></li>
+  </ul>
+  <h1><u>MEDICAL APPOINTMENT</u></h1>
+  <form>
+    <input type="text" id="fullname" name="fullname" placeholder="Full Name" required>
+    <input type="email" id="email" name="email" placeholder="Email Address" required>
+    <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+    <select id="doctor" name="doctor" required>
+      <option value="" disabled selected>Select a Doctor</option>
+      <option value="Dr. Smith">Dr. Smith</option>
+      <option value="Dr. Johnson">Dr. Johnson</option>
+      <option value="Dr. Lee">Dr. Edguard</option>
+    </select>
+    <input type="date" id="date" name="date" required>
+    <input type="time" id="time" name="time" required>
+    <div class="done">
+      DONE BY:<input type="text" id="aaa"><br><br>
+      SIGNATURE AND STAMP<br><br>
+    </div>
+    <button type="submit">Send</button>
+  </form><br>
+  <hr color="gray"><br>
+    <h1><u>MEDICAL APPOINTMENT</u></h1><br>
+    <form>
+      <input type="text" id="fullname" name="fullname" placeholder="Full Name" required>
+      <input type="email" id="email" name="email" placeholder="Email Address" required>
+      <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+      <input type="date" id="date" name="date" required><br><br><br>
+      <center>
+      <table>
+        <tr>
+          <td height="40px">sickness/illness/disease</td>
+          <td>medicine to give</td>
+        </tr>
+        <tr>
+          <td height="150px"><input type="text" id="in"></td>
+          <td height="150px"><input type="text" id="in"></td>
+        </tr>
+      </table>
+      </center><br>
+      <div class="done">
+        DONE BY:<input type="text" id="aaa"><br><br>
+        SIGNATURE AND STAMP<br><br>
+      </div>
+      <button type="submit">Send</button>
+    </form>
+  </body>
+</html>
